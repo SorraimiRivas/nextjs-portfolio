@@ -19,10 +19,16 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${inter.className} dark:bg-slate-950 bg-zinc-300 bg-fixed bg-no-repeat text-black dark:text-white h-[40000px]`}
+        className={`${inter.className} dark:bg-slate-950 bg-zinc-300 bg-fixed bg-no-repeat text-black dark:text-white h-[1500px] pt-28 sm:36`}
       >
-        <div className="h-[400px] w-[400px] bg-emerald-400/30 absolute -z-10 blur-[10rem] rounded-full right-0"></div>
-        <div className="h-[200px] w-[200px] bg-sky-500/60 absolute -z-10 blur-[10rem] rounded-full bottom-0 "></div>
+        <div
+          className="h-[400px] w-[400px] bg-emerald-400/30 absolute -z-10 
+        blur-[10rem] rounded-full right-0"
+        ></div>
+        <div
+          className="h-[200px] w-[200px] bg-violet-600 absolute -z-10 
+        blur-[10rem] rounded-full bottom-0 left-0"
+        ></div>
         <ActiveSectionContextProvider>
           <Header />
           {children}
