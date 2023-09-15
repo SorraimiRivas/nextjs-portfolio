@@ -7,7 +7,7 @@ import Link from "next/link";
 import Button from "./common/Button";
 
 import { RiDownloadLine } from "react-icons/ri";
-import { BsArrowRight, BsGithub, BsLinkedin } from "react-icons/bs";
+import { BsArrowRight, BsGithub } from "react-icons/bs";
 import { TfiLinkedin } from "react-icons/tfi";
 
 const Hero = () => {
@@ -23,13 +23,15 @@ const Hero = () => {
             duration: 1.5,
           }}
         >
-          <Image
-            src={"/react-2.svg"}
-            alt="react logo"
-            width={100}
-            height={100}
-            className="h-24 w-24 rounded-full object-cover shadow-2xl shadow-slate-900 dark:shadow-violet-600 bg-gradient-to-br from-slate-950 to-violet-900 p-1"
-          />
+          <div className="h-24 w-24 rounded-full shadow-2xl shadow-slate-900 dark:shadow-violet-600 ">
+            <Image
+              src={"/react-2.svg"}
+              alt="react logo"
+              width={100}
+              height={100}
+              className="h-24 w-24 rounded-full object-cover bg-gradient-to-br from-slate-950 to-violet-900 p-1 hover:animate-spin-slow"
+            />
+          </div>
         </motion.div>
         <motion.h1
           className="text-3xl md:text-6xl font-extrabold text-center pt-5"
