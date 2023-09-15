@@ -7,7 +7,8 @@ import Link from "next/link";
 import Button from "./common/Button";
 
 import { RiDownloadLine } from "react-icons/ri";
-import { BsArrowRight } from "react-icons/bs";
+import { BsArrowRight, BsGithub, BsLinkedin } from "react-icons/bs";
+import { TfiLinkedin } from "react-icons/tfi";
 
 const Hero = () => {
   return (
@@ -35,7 +36,7 @@ const Hero = () => {
           initial={{ opacity: 0, y: 100 }}
           animate={{ opacity: 1, y: 0 }}
         >
-          Turning Ideas into Stunning <br /> Mobile and Web Apps
+          Turning Ideas Into Stunning <br /> Mobile and Web Apps
         </motion.h1>
         <motion.p
           className="px-5 pt-8 text-xl md:text-2xl lg:text-4xl font-medium font-serif text-center md:w-[75%]"
@@ -48,22 +49,45 @@ const Hero = () => {
           to life. Let&apos;s collaborate and turn your vision into reality.
         </motion.p>
       </div>
-      <div className="flex flex-row gap-10 items-center justify-center py-10">
-        <Link href={"/#contact"}>
+      <motion.div
+        className="flex flex-row gap-10 items-center justify-center py-10"
+        initial={{ opacity: 0, y: 100 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ delay: 0.3 }}
+      >
+        <Link
+          href={"/#contact"}
+          className="hover:scale-125 transition duration-300 ease-in-out"
+        >
           <Button
             label="Contact Me"
             icon={<BsArrowRight size={20} />}
             color="bg-gray-900 text-white"
           />
         </Link>
-        <Link href={"/"}>
+        <Link
+          href={"/"}
+          className="hover:scale-125 transition duration-300 ease-in-out"
+        >
           <Button
             label="Download My CV"
             icon={<RiDownloadLine size={20} />}
-            color="bg-white text-black"
+            color="bg-white text-black dark:text-white"
           />
         </Link>
-      </div>
+        <Link
+          href={"https://github.com/SorraimiRivas"}
+          className="hover:scale-125 transition duration-300 ease-in-out"
+        >
+          <BsGithub size={40} />
+        </Link>
+        <Link
+          href={"https://www.linkedin.com/in/sorraimi-rivas/"}
+          className="bg-white rounded-full hover:scale-125 transition duration-300 ease-in-out"
+        >
+          <Button icon={<TfiLinkedin size={20} />} />
+        </Link>
+      </motion.div>
     </section>
   );
 };

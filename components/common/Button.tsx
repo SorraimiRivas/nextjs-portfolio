@@ -1,7 +1,7 @@
 import { FC } from "react";
 
 type ButtonProps = {
-  label: string;
+  label?: string;
   icon: React.ReactNode;
   color?: string;
 };
