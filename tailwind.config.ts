@@ -11,6 +11,9 @@ const config: Config = {
       animation: {
         "spin-slow": "spin 6s linear infinite",
       },
+      fontFamily: {
+        robo: ["Roboto", "sans-serif"],
+      },
     },
   },
   plugins: [],

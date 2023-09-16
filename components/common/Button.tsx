@@ -9,7 +9,7 @@ type ButtonProps = {
 const Button: FC<ButtonProps> = ({ label, icon, color }) => {
   return (
     <button
-      className={`${color} flex flex-row justify-center items-center gap-2 rounded-full p-3 font-semibold`}
+      className={`${color} flex flex-row justify-center items-center gap-2 rounded-full py-3 px-4 font-semibold`}
     >
       {label}
       {icon}

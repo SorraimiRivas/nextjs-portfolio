@@ -49,3 +49,10 @@ export const skills = [
   { name: "MongoDB", logo: "mongodb" },
   { name: "Axios HTTP", logo: "" },
 ] as const;
+
+export const dreamCompanies = [
+  { name: "Vercel", logo: "/vercel.svg" },
+  { name: "Expo", logo: "/expo.svg" },
+  { name: "Blizzard Ent.", logo: "/blizzard-entertainment.svg" },
+  { name: "Epic Games", logo: "/epic.svg" },
+];

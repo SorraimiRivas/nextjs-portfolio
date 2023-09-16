@@ -23,13 +23,17 @@ const Hero = () => {
             duration: 1.5,
           }}
         >
-          <div className="h-24 w-24 rounded-full shadow-2xl shadow-slate-900 dark:shadow-violet-600 ">
+          <div
+            className="h-24 w-24 rounded-full shadow-2xl shadow-slate-900 bg-transparent
+           dark:shadow-violet-600 "
+          >
             <Image
               src={"/react-2.svg"}
               alt="react logo"
               width={100}
               height={100}
-              className="h-24 w-24 rounded-full object-cover bg-gradient-to-br from-slate-950 to-violet-900 p-1 hover:animate-spin-slow"
+              className="h-24 w-24 rounded-full object-cover bg-gradient-to-br from-slate-950
+               to-violet-900 p-1 animate-spin-slow"
             />
           </div>
         </motion.div>
@@ -41,53 +45,70 @@ const Hero = () => {
           Turning Ideas Into Stunning <br /> Mobile and Web Apps
         </motion.h1>
         <motion.p
-          className="px-5 pt-8 text-xl md:text-2xl lg:text-4xl font-medium font-serif text-center md:w-[75%]"
+          className="px-5 pt-8 text-xl md:text-2xl lg:text-4xl font-medium text-center 
+          md:w-[75%]"
           initial={{ opacity: 0, y: 100 }}
           animate={{ opacity: 1, y: 0 }}
         >
-          I&apos;m a React Native developer based in the Dominican Republic,
-          passionate about crafting seamless digital experiences. With a knack
-          for user-centric design, I specialize in bringing mobile app designs
-          to life. Let&apos;s collaborate and turn your vision into reality.
+          Hello, I&apos;m <span className="font-bold">Sorraimi</span>. I&apos;m
+          a <span className="font-bold ">Front-End developer</span> with{" "}
+          <span className="font-bold ">2 years</span> of experience. I enjoy
+          building apps that are <span className="font-semibold">easy</span> to
+          use and <span className="font-bold ">intuitive</span>. Let&apos;s{" "}
+          <span className="font-semibold">collaborate</span> and turn your
+          vision into reality.
         </motion.p>
       </div>
       <motion.div
-        className="flex flex-row gap-10 items-center justify-center py-10"
+        className="flex flex-col sm:flex-row gap-10 items-center justify-center py-10"
         initial={{ opacity: 0, y: 100 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ delay: 0.3 }}
       >
         <Link
           href={"/#contact"}
-          className="hover:scale-125 transition duration-300 ease-in-out"
+          className="group hover:scale-125 transition duration-300 ease-in-out"
         >
           <Button
             label="Contact Me"
-            icon={<BsArrowRight size={20} />}
+            icon={
+              <BsArrowRight
+                size={20}
+                className="group-hover:translate-x-1 transition"
+              />
+            }
             color="bg-gray-900 text-white"
           />
         </Link>
-        <Link
-          href={"/"}
-          className="hover:scale-125 transition duration-300 ease-in-out"
+        <a
+          href="/sorraimi_rivas.pdf"
+          className="group hover:scale-125 transition duration-300 ease-in-out"
+          download
         >
           <Button
             label="Download My CV"
-            icon={<RiDownloadLine size={20} />}
+            icon={
+              <RiDownloadLine
+                size={20}
+                className="group-hover:translate-y-1 transition"
+              />
+            }
             color="bg-white text-black dark:text-white"
           />
-        </Link>
+        </a>
         <Link
           href={"https://github.com/SorraimiRivas"}
+          target="_blank"
           className="hover:scale-125 transition duration-300 ease-in-out"
         >
-          <BsGithub size={40} />
+          <BsGithub size={42} />
         </Link>
         <Link
-          href={"https://www.linkedin.com/in/sorraimi-rivas/"}
-          className="bg-white rounded-full hover:scale-125 transition duration-300 ease-in-out"
+          href="https://www.linkedin.com/in/sorraimi-rivas/"
+          target="_blank"
+          className="h-11 w-11 bg-white rounded-full flex items-center justify-center hover:scale-125 transition duration-300 ease-in-out"
         >
-          <Button icon={<TfiLinkedin size={20} />} />
+          <TfiLinkedin size={20} color="black" />
         </Link>
       </motion.div>
     </section>
