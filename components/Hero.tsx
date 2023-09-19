@@ -24,15 +24,15 @@ const Hero = () => {
           }}
         >
           <div
-            className="h-24 w-24 rounded-full shadow-2xl shadow-slate-900 bg-transparent
-           dark:shadow-violet-600 "
+            className="h-24 w-24 rounded-full shadow-2xl shadow-slate-900
+           dark:shadow-violet-600"
           >
             <Image
-              src={"/react-2.svg"}
+              src={"/svgs/react-2.svg"}
               alt="react logo"
               width={100}
               height={100}
-              className="h-24 w-24 rounded-full object-cover bg-gradient-to-br from-slate-950
+              className="h-24 w-24 rounded-full object-cover bg-gradient-to-br from-sky-800
                to-violet-900 p-1 animate-spin-slow"
             />
           </div>
@@ -82,7 +82,7 @@ const Hero = () => {
         </Link>
         <a
           href="/sorraimi_rivas.pdf"
-          className="group hover:scale-125 transition duration-300 ease-in-out"
+          className="group hover:scale-125 transition duration-300 ease-in-out border rounded-full border-gray-200"
           download
         >
           <Button

@@ -2,18 +2,14 @@
 import Link from "next/link";
 import { motion } from "framer-motion";
 
-import { useActiveSectionContext } from "@/context/active-section-context.ts";
 import { navigation } from "@/data";
 import Image from "next/image";
 
 const Header = () => {
-  const { activeSection, setActiveSection, setTimeOfLastClick } =
-    useActiveSectionContext();
-
   return (
     <header className="z-[9999] relative">
       <motion.div
-        className="fixed top-0 left-1/2 h-[72px] w-full rounded-none border border-white border-opacity-40 bg-white bg-opacity-80 backdrop-blur-[8px] sm:top-6 sm:h-[52px] sm:w-[576px] sm:rounded-full dark:border-black/40 dark:bg-opacity-75"
+        className="fixed top-0 left-1/2 h-[72px] w-full rounded-none border border-gray-300 border-opacity-40 bg-white bg-opacity-80 backdrop-blur-[8px] sm:top-6 sm:h-[52px] sm:w-[576px] sm:rounded-full dark:border-black/40 dark:bg-opacity-75"
         initial={{ y: -100, x: "-50%", opacity: 0 }}
         animate={{ y: 0, x: "-50%", opacity: 1 }}
       ></motion.div>

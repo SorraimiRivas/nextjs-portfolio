@@ -1,5 +1,6 @@
 import About from "@/components/About";
 import Hero from "@/components/Hero";
+import Projects from "@/components/Projects";
 import Divider from "@/components/common/Divider";
 
 const Home = () => {
@@ -8,6 +9,9 @@ const Home = () => {
       <Hero />
       <Divider />
       <About />
+      <Divider />
+      <Projects />
+      <Divider />
     </main>
   );
 };
