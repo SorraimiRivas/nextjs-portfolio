@@ -15,16 +15,38 @@ export const socials = [
 ] as const;
 
 export const skills = [
-  { name: "HTML", logo: "html5" },
-  { name: "CSS", logo: "css3" },
+  { name: "HTML", logo: "html" },
+  { name: "CSS", logo: "css-3" },
   { name: "JavaScript", logo: "javascript" },
   { name: "TypeScript", logo: "typescript" },
-  { name: "React", logo: "react" },
-  { name: "React Native", logo: "react" },
+  { name: "React", logo: "react-2" },
+  { name: "Nextjs", logo: "next-js" },
+  { name: "React Native", logo: "react-native" },
+  { name: "Redux", logo: "redux" },
   { name: "Expo", logo: "expo" },
-  { name: "MongoDB", logo: "mongodb" },
-  { name: "Axios HTTP", logo: "" },
+  { name: "MongoDB", logo: "mongodb-icon" },
+  { name: "Axios HTTP", logo: "axios" },
+  { name: "GraphQL", logo: "graphql" },
+  { name: "Apollo", logo: "apollo-graphql-compact" },
+  { name: "Tailwind CSS", logo: "tailwind-css" },
+  { name: "Styled Components", logo: "styled-components" },
+  { name: "Git", logo: "git-icon" },
+  { name: "GitHub", logo: "github-icon" },
+  { name: "Gitlab", logo: "gitlab" },
 ] as const;
+
+export const learning = [
+  { name: "Nodejs", logo: "nodejs-icon" },
+  { name: "SwiftUI", logo: "swift" },
+  { name: "Framer Motion", logo: "framer-motion" },
+  { name: "RN Firebase", logo: "react-native-firebase-1" },
+  { name: "Firebase", logo: "firebase" },
+  { name: "MobX", logo: "mobx" },
+  { name: "AWS", logo: "aws" },
+  { name: "Flutter", logo: "flutter-logo" },
+  { name: "Unreal Engine", logo: "unreal" },
+  { name: "Figma", logo: "figma" },
+];
 
 export const projects = [
   {
