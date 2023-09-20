@@ -35,19 +35,6 @@ export const skills = [
   { name: "Gitlab", logo: "gitlab" },
 ] as const;
 
-export const learning = [
-  { name: "Nodejs", logo: "nodejs-icon" },
-  { name: "SwiftUI", logo: "swift" },
-  { name: "Framer Motion", logo: "framer-motion" },
-  { name: "RN Firebase", logo: "react-native-firebase-1" },
-  { name: "Firebase", logo: "firebase" },
-  { name: "MobX", logo: "mobx" },
-  { name: "AWS", logo: "aws" },
-  { name: "Flutter", logo: "flutter-logo" },
-  { name: "Unreal Engine", logo: "unreal" },
-  { name: "Figma", logo: "figma" },
-];
-
 export const projects = [
   {
     name: "TMDB Mobile",
