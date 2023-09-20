@@ -3,14 +3,19 @@ import { motion } from "framer-motion";
 import SectionHeading from "./common/SectionHeading";
 import { dreamCompanies } from "@/data";
 import Image from "next/image";
+import useSelectedSection from "@/hooks";
 
 const About = () => {
+  const { ref } = useSelectedSection("About", 0.8);
+
   return (
     <motion.section
-      className="flex flex-col items-center gap-5 leading-8 max-w-[720px] text-xl md:2xl sm:mb-2 text-center"
+      className="flex flex-col items-center gap-5 leading-8 max-w-[720px] text-xl md:2xl sm:mb-2 text-center scroll-mt-28"
       initial={{ opacity: 0, y: 100 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ delay: 0.175 }}
+      id="about"
+      ref={ref}
     >
       <SectionHeading>About Me</SectionHeading>
       <p>
@@ -59,7 +64,6 @@ const About = () => {
         <span className="font-semibold">guitar</span> skills, hoping to strum
         out some tunes soon.
       </p>
-
       <div className="pt-4 px-4">
         <p>In the future, I want work for at least one of these comapanies:</p>
         <div className="flex items-center justify-center flex-row gap-10 py-8 font-semibold">

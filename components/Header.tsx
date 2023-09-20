@@ -1,11 +1,15 @@
 "use client";
 import Link from "next/link";
 import { motion } from "framer-motion";
+import clsx from "clsx";
 
 import { navigation } from "@/data";
-import Image from "next/image";
+import { useActiveSectionContext } from "@/context/ActiveSectionContext";
 
 const Header = () => {
+  const { activeSection, setActiveSection, setLastClicked } =
+    useActiveSectionContext();
+
   return (
     <header className="z-[9999] relative">
       <motion.div
@@ -23,10 +27,30 @@ const Header = () => {
               animate={{ y: 0, opacity: 1 }}
             >
               <Link
+                onClick={() => {
+                  setActiveSection(link.name);
+                  setLastClicked(Date.now());
+                }}
                 href={link.path}
-                className="flex w-full items-center justify-center px-3 py-3 hover:text-gray-950 transition dark:text-gray-500 dark:hover:text-gray-300"
+                className={clsx(
+                  "flex w-full items-center justify-center px-3 py-3 hover:text-gray-950 transition dark:text-gray-500 dark:hover:text-gray-300",
+                  {
+                    "text-gray-950": activeSection === link.name,
+                  }
+                )}
               >
                 {link.name}
+                {link.name === activeSection && (
+                  <motion.span
+                    layoutId="activeSection"
+                    transition={{
+                      type: "spring",
+                      stiffness: 380,
+                      damping: 30,
+                    }}
+                    className="bg-gray-200 rounded-full absolute inset-0 -z-10"
+                  ></motion.span>
+                )}
               </Link>
             </motion.li>
           ))}

@@ -5,14 +5,17 @@ import Image from "next/image";
 import Link from "next/link";
 
 import Button from "./common/Button";
+import useSelectedSection from "@/hooks";
 
 import { RiDownloadLine } from "react-icons/ri";
 import { BsArrowRight, BsGithub } from "react-icons/bs";
 import { TfiLinkedin } from "react-icons/tfi";
 
 const Hero = () => {
+  const { ref } = useSelectedSection("Home", 0.75);
+
   return (
-    <section>
+    <section id="home" className="scroll-mt-28" ref={ref}>
       <div className="flex flex-col items-center justify-center">
         <motion.div
           initial={{ opacity: 0, scale: 0 }}
@@ -23,17 +26,13 @@ const Hero = () => {
             duration: 1.5,
           }}
         >
-          <div
-            className="h-24 w-24 rounded-full shadow-2xl shadow-slate-900
-           dark:shadow-violet-600"
-          >
+          <div className="h-24 w-24 rounded-full shadow-2xl shadow-slate-900 dark:shadow-violet-600">
             <Image
               src={"/svgs/react-2.svg"}
               alt="react logo"
               width={100}
               height={100}
-              className="h-24 w-24 rounded-full object-cover bg-gradient-to-br from-sky-800
-               to-violet-900 p-1 animate-spin-slow"
+              className="h-24 w-24 rounded-full object-cover bg-gradient-to-br from-sky-800 to-violet-900 p-1 animate-spin-slow"
             />
           </div>
         </motion.div>
@@ -54,9 +53,9 @@ const Hero = () => {
           a <span className="font-bold ">Front-End developer</span> with{" "}
           <span className="font-bold ">2 years</span> of experience. I enjoy
           building apps that are <span className="font-semibold">easy</span> to
-          use and <span className="font-bold ">intuitive</span>. Let&apos;s{" "}
-          <span className="font-semibold">collaborate</span> and turn your
-          vision into reality.
+          use and <span className="font-bold ">intuitive</span> to navigate.
+          Let&apos;s <span className="font-semibold">collaborate</span> and turn
+          your vision into reality.
         </motion.p>
       </div>
       <motion.div
