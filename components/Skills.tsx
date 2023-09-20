@@ -1,8 +1,10 @@
 "use client";
-import React, { Fragment } from "react";
+
+import React from "react";
 import SectionHeading from "./common/SectionHeading";
 import useSelectedSection from "@/hooks";
 import SkillIcon from "./common/SkillIcon";
+
 import { skills } from "@/data";
 import { motion } from "framer-motion";
 
