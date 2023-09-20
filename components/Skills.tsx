@@ -32,7 +32,6 @@ const Skills = () => {
             className="hover:scale-110 transition duration-300 ease-in-out"
             variants={fadeInAnimationVariants}
             initial="initial"
-            animate="animate"
             whileInView="animate"
             viewport={{ once: true }}
             custom={index}
