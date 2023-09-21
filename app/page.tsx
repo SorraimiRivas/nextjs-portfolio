@@ -1,4 +1,5 @@
 import About from "@/components/About";
+import ContactMe from "@/components/ContactMe";
 import Experience from "@/components/Experience";
 import Hero from "@/components/Hero";
 import Projects from "@/components/Projects";
@@ -18,6 +19,7 @@ const Home = () => {
       <Divider />
       <Experience />
       <Divider />
+      <ContactMe />
     </main>
   );
 };

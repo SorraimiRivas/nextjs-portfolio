@@ -1,4 +1,6 @@
-import { IoLogoVercel } from "react-icons/io5";
+import { IoSchoolSharp } from "react-icons/io5";
+import { createElement } from "react";
+import { AiFillChrome, AiFillMobile } from "react-icons/ai";
 
 export const navigation = [
   { name: "Home", path: "/#home" },
@@ -81,6 +83,35 @@ export const projects = [
   },
 ];
 
+export const experience = [
+  {
+    name: "Kodigo",
+    position: "Computer Science Fundamentals",
+    description:
+      "Finished a 3 month bootcamp where I learned the fundamentals of computer science and programming, as well as the basics of design patterns.",
+    period: "2021",
+    location: "San Salvador, El Salvador / Remote",
+    icon: createElement(IoSchoolSharp),
+  },
+  {
+    name: "Applaudo Studios",
+    position: "Frontend Developer",
+    description:
+      " Built and implemented user interfaces using React and React Native frameworks. This involved writing clean, efficient, and maintainable code to create interactive components and screens and collaborated with designers and product teams to transform design mockups and wireframes into fully functional UI components and mobile app screens.",
+    period: "2022 - 2023",
+    location: "San Salvador, El Salvador / Remote",
+    icon: createElement(AiFillMobile),
+  },
+  {
+    name: "Agricultic",
+    position: "Frontend Developer",
+    description:
+      "Designing and implementing the visual elements of the web app, including layout, typography, color schemes, and overall user experience and transforming design mockups into actual interactive components using Javascript, React/ Next, and Tailwind.",
+    period: "2023 - Present",
+    location: "La Vega, Rep. Dom. / Remote",
+    icon: createElement(AiFillChrome),
+  },
+];
 export const dreamCompanies = [
   { name: "Vercel", logo: "/svgs/vercel.svg" },
   { name: "Expo", logo: "/svgs/expo.svg" },
