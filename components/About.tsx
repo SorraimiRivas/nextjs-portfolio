@@ -1,7 +1,7 @@
 "use client";
 import { motion } from "framer-motion";
 import SectionHeading from "./common/SectionHeading";
-import { dreamCompanies } from "@/data";
+import { dreamCompanies } from "@/lib/data";
 import Image from "next/image";
 import useSelectedSection from "@/hooks";
 

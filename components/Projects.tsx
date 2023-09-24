@@ -1,7 +1,7 @@
 "use client";
 import React, { Fragment, useEffect } from "react";
 import SectionHeading from "./common/SectionHeading";
-import { projects } from "@/data";
+import { projects } from "@/lib/data";
 import ProjectCard from "./common/ProjectCard";
 import { useInView } from "react-intersection-observer";
 import { useActiveSectionContext } from "@/context/ActiveSectionContext";

@@ -10,9 +10,11 @@ import useSelectedSection from "@/hooks";
 import { RiDownloadLine } from "react-icons/ri";
 import { BsArrowRight, BsGithub } from "react-icons/bs";
 import { TfiLinkedin } from "react-icons/tfi";
+import { useActiveSectionContext } from "@/context/ActiveSectionContext";
 
 const Hero = () => {
   const { ref } = useSelectedSection("Home", 0.75);
+  const { setActiveSection, setLastClicked } = useActiveSectionContext();
 
   return (
     <section id="home" className="scroll-mt-28" ref={ref}>
@@ -26,13 +28,13 @@ const Hero = () => {
             duration: 1.5,
           }}
         >
-          <div className="h-24 w-24 rounded-full shadow-2xl shadow-slate-900 dark:shadow-violet-600">
+          <div className="h-24 w-24 rounded-full">
             <Image
               src={"/svgs/react-2.svg"}
               alt="react logo"
               width={100}
               height={100}
-              className="h-24 w-24 rounded-full object-cover bg-gradient-to-br from-sky-800 to-violet-900 p-1 animate-spin-slow"
+              className="h-24 w-24 rounded-full object-cover animate-spin-slow"
             />
           </div>
         </motion.div>
@@ -67,6 +69,10 @@ const Hero = () => {
         <Link
           href={"/#contact"}
           className="group hover:scale-125 transition duration-300 ease-in-out"
+          onClick={() => {
+            setActiveSection("Contact");
+            setLastClicked(Date.now());
+          }}
         >
           <Button
             label="Contact Me"

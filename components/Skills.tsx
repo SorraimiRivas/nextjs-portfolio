@@ -5,7 +5,7 @@ import SectionHeading from "./common/SectionHeading";
 import useSelectedSection from "@/hooks";
 import SkillIcon from "./common/SkillIcon";
 
-import { skills } from "@/data";
+import { skills } from "@/lib/data";
 import { motion } from "framer-motion";
 
 const fadeInAnimationVariants = {
@@ -27,7 +27,7 @@ const Skills = () => {
   return (
     <section id="skills" className="scroll-mt-28 max-w-[720px]" ref={ref}>
       <SectionHeading>Skills</SectionHeading>
-      <ul className="grid grid-cols-6 flex-wrap gap-2 items-center justify-center mt-10">
+      <ul className="grid grid-cols-6 flex-wrap gap-6 items-center justify-center mt-10 dark:bg-white p-4 dark:rounded-xl">
         {skills.map((skill, index) => (
           <motion.li
             key={skill.name}

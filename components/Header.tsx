@@ -3,7 +3,7 @@ import Link from "next/link";
 import { motion } from "framer-motion";
 import clsx from "clsx";
 
-import { navigation } from "@/data";
+import { navigation } from "@/lib/data";
 import { useActiveSectionContext } from "@/context/ActiveSectionContext";
 
 const Header = () => {
@@ -33,7 +33,7 @@ const Header = () => {
                 }}
                 href={link.path}
                 className={clsx(
-                  "flex w-full items-center justify-center px-3 py-3 hover:text-gray-950 transition dark:text-gray-500 dark:hover:text-gray-300",
+                  "flex w-full items-center justify-center px-3 py-3 hover:text-gray-950 transition dark:text-gray-500 dark:hover:text-gray-950",
                   {
                     "text-gray-950": activeSection === link.name,
                   }

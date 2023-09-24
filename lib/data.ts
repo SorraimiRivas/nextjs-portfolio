@@ -32,9 +32,9 @@ export const skills = [
   { name: "Apollo", logo: "apollo-graphql-compact" },
   { name: "Tailwind CSS", logo: "tailwind-css" },
   { name: "Styled Components", logo: "styled-components" },
+  { name: "Framer Motion", logo: "framer-motion" },
   { name: "Git", logo: "git-icon" },
   { name: "GitHub", logo: "github-icon" },
-  { name: "Gitlab", logo: "gitlab" },
 ] as const;
 
 export const projects = [
@@ -73,13 +73,6 @@ export const projects = [
       "Apollo",
       "Styled Components",
     ],
-  },
-  {
-    name: "Personal Portfolio",
-    description:
-      "A personal portfolio website to showcase my projects and skills",
-    images: {},
-    tags: ["React", "Nextjs", "TypeScript", "Tailwind CSS", "Framer Motion"],
   },
 ];
 

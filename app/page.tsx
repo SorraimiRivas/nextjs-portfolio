@@ -18,7 +18,6 @@ const Home = () => {
       <Skills />
       <Divider />
       <Experience />
-      <Divider />
       <ContactMe />
     </main>
   );

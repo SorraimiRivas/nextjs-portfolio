@@ -1,18 +1,18 @@
 "use client";
-import { ProjectCardProps } from "@/types";
+import { ProjectCardProps } from "@/lib/types";
 import Image from "next/image";
-import React, { FC, useRef } from "react";
+import React, { useRef } from "react";
 import imageUrl from "@/public/images/testProject.png";
 import { motion, useScroll, useTransform } from "framer-motion";
 
-const ProjectCard: FC<ProjectCardProps> = ({
+const ProjectCard = ({
   name,
   description,
   images,
   github,
   url,
   tags,
-}) => {
+}: ProjectCardProps) => {
   const ref = useRef<HTMLDivElement | null>(null);
   const { scrollYProgress } = useScroll({
     target: ref,
