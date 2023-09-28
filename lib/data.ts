@@ -1,6 +1,7 @@
-import { IoSchoolSharp } from "react-icons/io5";
 import { createElement } from "react";
+import { IoSchoolSharp } from "react-icons/io5";
 import { AiFillChrome, AiFillMobile } from "react-icons/ai";
+import { FaReact } from "react-icons/fa";
 
 export const navigation = [
   { name: "Home", path: "/#home" },
@@ -34,7 +35,7 @@ export const skills = [
   { name: "Styled Components", logo: "styled-components" },
   { name: "Framer Motion", logo: "framer-motion" },
   { name: "Git", logo: "git-icon" },
-  { name: "GitHub", logo: "github-icon" },
+  { name: "GitHub", logo: "github" },
 ] as const;
 
 export const projects = [
@@ -42,27 +43,28 @@ export const projects = [
     name: "TMDB Mobile",
     description:
       "A mobile app for browsing popular movies that users can add to their favorites and store locally on their devices.",
-    images: {},
+    images: "",
     tags: ["React Native", "TypeScript", "Redux", "Axios HTTP", "Rest API"],
   },
   {
     name: "Marvel Comics",
-    description: "A mobile app for browsing Marvel Comics",
-    images: {},
+    description:
+      "A mobile app for browsing Marvel Comics and local storage favourite functionality.",
+    images: "",
     tags: ["React Native", "TypeScript", "Redux", "Axios HTTP", "Rest API"],
   },
   {
     name: "To-modoro",
     description:
-      "A mobile app for managing tasks using the Pomodoro technique and Todo list to stay up to date with your taks",
-    images: {},
+      "A mobile app for managing tasks using the Pomodoro technique and Todo list to stay up to date with your taks.",
+    images: "",
     tags: ["Expo", "TypeScript", "Tailwind CSS"],
   },
   {
     name: "Agricultic",
     description:
       "Agricultic is a digital platform that provides farmers and consumers with the necessary tools to automate all-in-one management processes.",
-    images: {},
+    images: "/images/agricultic.png",
     tags: [
       "React",
       "Nextjs",
@@ -71,7 +73,6 @@ export const projects = [
       "Headless UI",
       "GraphQL",
       "Apollo",
-      "Styled Components",
     ],
   },
 ];
@@ -82,25 +83,34 @@ export const experience = [
     position: "Computer Science Fundamentals",
     description:
       "Finished a 3 month bootcamp where I learned the fundamentals of computer science and programming, as well as the basics of design patterns.",
-    period: "2021",
+    period: "October, 2021 - January, 2022",
     location: "San Salvador, El Salvador / Remote",
     icon: createElement(IoSchoolSharp),
   },
   {
     name: "Applaudo Studios",
-    position: "Frontend Developer",
+    position: "React Native Trainee Program",
     description:
-      " Built and implemented user interfaces using React and React Native frameworks. This involved writing clean, efficient, and maintainable code to create interactive components and screens and collaborated with designers and product teams to transform design mockups and wireframes into fully functional UI components and mobile app screens.",
-    period: "2022 - 2023",
+      "Intensive 3 month training program where I learned the fundamentals of React Native and how to build mobile apps using React Native. Learned about Typescript, Redux, Axios, and how to consume Rest APIs as well as React Navigation and how to build complex navigations using Drawer, Bottom Tabs, Top Tabs Navigation and much more.",
+    period: "January, 2022 - March, 2022",
     location: "San Salvador, El Salvador / Remote",
     icon: createElement(AiFillMobile),
+  },
+  {
+    name: "Applaudo Studios",
+    position: "React/React Native Front-End Developer",
+    description:
+      " Built and implemented user interfaces using React and React Native frameworks. This involved writing clean, efficient, and maintainable code to create interactive components and screens and collaborated with designers and product teams to transform design mockups and wireframes into fully functional UI components and mobile app screens.",
+    period: "March, 2022 - March, 2023",
+    location: "San Salvador, El Salvador / Remote",
+    icon: createElement(FaReact),
   },
   {
     name: "Agricultic",
     position: "Frontend Developer",
     description:
-      "Designing and implementing the visual elements of the web app, including layout, typography, color schemes, and overall user experience and transforming design mockups into actual interactive components using Javascript, React/ Next, and Tailwind.",
-    period: "2023 - Present",
+      "Designing and implementing the visual elements of the web app, including layout, typography, color schemes, and overall user experience and transforming design mockups into actual interactive components using Javascript, React/ Nextjs, and Tailwind.",
+    period: "March, 2023 - Present",
     location: "La Vega, Rep. Dom. / Remote",
     icon: createElement(AiFillChrome),
   },
