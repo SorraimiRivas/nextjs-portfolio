@@ -1,10 +1,10 @@
 "use client";
-import React, { Fragment, useEffect } from "react";
+
+import React, { Fragment } from "react";
+
 import SectionHeading from "./common/SectionHeading";
 import { projects } from "@/lib/data";
 import ProjectCard from "./common/ProjectCard";
-import { useInView } from "react-intersection-observer";
-import { useActiveSectionContext } from "@/context/ActiveSectionContext";
 import useSelectedSection from "@/hooks";
 
 const Projects = () => {

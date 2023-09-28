@@ -13,6 +13,7 @@ const fadeInAnimationVariants = {
     opacity: 0,
     y: 100,
   },
+
   animate: (index: number) => ({
     opacity: 1,
     y: 0,
@@ -27,7 +28,7 @@ const Skills = () => {
   return (
     <section id="skills" className="scroll-mt-28 max-w-[720px]" ref={ref}>
       <SectionHeading>Skills</SectionHeading>
-      <ul className="grid grid-cols-6 flex-wrap gap-6 items-center justify-center mt-10 dark:bg-white p-4 dark:rounded-xl">
+      <ul className="grid grid-cols-6 flex-wrap gap-6 items-center bg-gray-200 dark:bg-white/10 justify-center mt-10  p-4 rounded-xl">
         {skills.map((skill, index) => (
           <motion.li
             key={skill.name}

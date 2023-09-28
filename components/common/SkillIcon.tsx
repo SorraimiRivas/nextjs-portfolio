@@ -15,7 +15,7 @@ const SkillIcon = ({ svg, name }: SkillIconProps) => {
         height={30}
         className="w-[100%] h-full"
       />
-      <p className="text-xs text-center font-semibold opacity-0 group-hover:opacity-[1] bg-gray-200 rounded-lg py-1 px-2 ">
+      <p className="text-xs text-center font-semibold opacity-0 group-hover:opacity-[1] bg-white dark:bg-gray-50 rounded-lg py-1 px-2 ">
         {name}
       </p>
     </div>

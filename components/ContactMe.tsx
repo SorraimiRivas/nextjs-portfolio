@@ -46,7 +46,7 @@ const ContactMe = () => {
         }}
       >
         <input
-          className="border border-gray-200 w-full px-4 py-2 rounded-lg"
+          className="border border-gray-200 w-full px-4 py-2 rounded-lg text-black"
           placeholder="Your email..."
           name="senderEmail"
           type="email"
@@ -54,7 +54,7 @@ const ContactMe = () => {
         />
         <textarea
           placeholder="Your message..."
-          className="p-4 h-56 rounded-lg border border-gray-200 w-full mt-4 "
+          className="p-4 h-56 rounded-lg border border-gray-200 w-full mt-4 text-black"
           required
           name="message"
           maxLength={6000}

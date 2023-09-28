@@ -17,7 +17,11 @@ const Hero = () => {
   const { setActiveSection, setLastClicked } = useActiveSectionContext();
 
   return (
-    <section id="home" className="scroll-mt-28" ref={ref}>
+    <section
+      id="home"
+      className="scroll-mt-28 max-w-[60rem] text-center"
+      ref={ref}
+    >
       <div className="flex flex-col items-center justify-center">
         <motion.div
           initial={{ opacity: 0, scale: 0 }}
@@ -28,7 +32,7 @@ const Hero = () => {
             duration: 1.5,
           }}
         >
-          <div className="h-24 w-24 rounded-full">
+          <div className="h-24 w-24 rounded-full my-14 sm:my-36">
             <Image
               src={"/svgs/react-2.svg"}
               alt="react logo"
@@ -68,7 +72,7 @@ const Hero = () => {
       >
         <Link
           href={"/#contact"}
-          className="group hover:scale-125 transition duration-300 ease-in-out"
+          className="group hover:scale-125 transition duration-300 ease-in-out dark:shadow-white dark:shadow-sm rounded-full"
           onClick={() => {
             setActiveSection("Contact");
             setLastClicked(Date.now());
@@ -82,12 +86,12 @@ const Hero = () => {
                 className="group-hover:translate-x-1 transition"
               />
             }
-            color="bg-gray-900 text-white"
+            color="bg-gray-950 text-white"
           />
         </Link>
         <a
           href="/sorraimi_rivas.pdf"
-          className="group hover:scale-125 transition duration-300 ease-in-out border rounded-full border-gray-200"
+          className="group hover:scale-125 transition duration-300 ease-in-out border rounded-full border-gray-200 dark:text-black"
           download
         >
           <Button
@@ -95,10 +99,10 @@ const Hero = () => {
             icon={
               <RiDownloadLine
                 size={20}
-                className="group-hover:translate-y-1 transition"
+                className="group-hover:translate-y-1 transition dark:text-black"
               />
             }
-            color="bg-white text-black dark:text-white"
+            color="bg-white text-black dark:text-black"
           />
         </a>
         <Link
@@ -106,14 +110,14 @@ const Hero = () => {
           target="_blank"
           className="hover:scale-125 transition duration-300 ease-in-out"
         >
-          <BsGithub size={42} />
+          <BsGithub size={44} />
         </Link>
         <Link
           href="https://www.linkedin.com/in/sorraimi-rivas/"
           target="_blank"
-          className="h-11 w-11 bg-white rounded-full flex items-center justify-center hover:scale-125 transition duration-300 ease-in-out"
+          className="h-12 w-12 bg-white border border-gray-200 rounded-full flex items-center justify-center hover:scale-125 transition duration-300 ease-in-out dark:text-black"
         >
-          <TfiLinkedin size={20} color="black" />
+          <TfiLinkedin size={20} />
         </Link>
       </motion.div>
     </section>
