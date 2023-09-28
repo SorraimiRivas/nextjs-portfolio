@@ -28,12 +28,13 @@ export default function RootLayout({
         dark:text-white  pt-28 sm:36`}
       >
         <div
-          className="h-[150px] w-[300px] bg-emerald-400/70 absolute -z-10 
-        blur-[8rem] rounded-full right-0 top-0"
+          className="h-[150px] w-[300px] lg:h-[200px] lg:w-[300px] bg-emerald-400/50 absolute -z-10 
+            blur-[8rem] rounded-full right-0 top-0 lg:right-[500px]"
         ></div>
         <div
-          className="h-[200px] w-[200px] bg-pink-600/70 absolute -z-10 
-        blur-[8rem] rounded-full bottom-0 left-0"
+          className="h-[200px] w-[200px] lg:h-[200px] lg:w-[400px] 
+          bg-pink-600/50 absolute -z-10 
+          blur-[10rem] rounded-full bottom-0 left-0 lg:left-[700px] "
         ></div>
         <ThemeContextProvider>
           <ActiveSectionContextProvider>
