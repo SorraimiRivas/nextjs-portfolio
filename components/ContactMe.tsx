@@ -1,15 +1,17 @@
 "use client";
-import SectionHeading from "./common/SectionHeading";
-import { FaPaperPlane } from "react-icons/fa";
+
+import { useState } from "react";
 import { motion } from "framer-motion";
 import useSelectedSection from "@/hooks";
-import { send } from "process";
 import { sendEmail } from "@/lib/serverActions";
+import SectionHeading from "./common/SectionHeading";
 import SubmitButton from "./common/SubmitButton";
 import toast from "react-hot-toast";
 
 const ContactMe = () => {
   const { ref } = useSelectedSection("Contact", 0.4);
+  const [message, setMessage] = useState<string>("");
+  const [email, setEmail] = useState<string>("");
 
   return (
     <motion.section
@@ -42,7 +44,11 @@ const ContactMe = () => {
           if (error) {
             toast.error(error);
           }
-          toast.success("Message sent successfully!");
+          toast.success("Success! Will get back to you as soon as possible", {
+            duration: 4000,
+          });
+          setMessage("");
+          setEmail("");
         }}
       >
         <input
@@ -51,6 +57,8 @@ const ContactMe = () => {
           name="senderEmail"
           type="email"
           required
+          value={email}
+          onChange={(e) => setEmail(e.target.value)}
         />
         <textarea
           placeholder="Your message..."
@@ -58,6 +66,8 @@ const ContactMe = () => {
           required
           name="message"
           maxLength={6000}
+          value={message}
+          onChange={(e) => setMessage(e.target.value)}
         />
         <SubmitButton />
       </form>
