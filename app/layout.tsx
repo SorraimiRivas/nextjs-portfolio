@@ -24,17 +24,13 @@ export default function RootLayout({
   return (
     <html lang="en" className="!scroll-smooth">
       <body
-        className={`${inter.className} dark:bg-gradient-to-r from-slate-900 from-25% via-25% to-50% via-slate-900 to-slate-950 bg-gray-50 bg-fixed bg-no-repeat text-black 
-        dark:text-white  pt-28 sm:36`}
+        className={`${inter.className} dark:bg-gradient-to-tr from-[#191970] to-slate-950  bg-gray-50 bg-fixed bg-no-repeat text-black 
+        dark:text-white  pt-28 sm:pt-36`}
       >
+        <div className="h-[15rem] w-[20rem] absolute -z-10  bg-[#dc2626]/40 blur-[10rem] rounded-full left-0 top-0 xl:left-[400px]"></div>
         <div
-          className="h-[150px] w-[300px] lg:h-[200px] lg:w-[300px] bg-emerald-400/50 absolute -z-10 
-            blur-[8rem] rounded-full right-0 top-0 lg:right-[500px]"
-        ></div>
-        <div
-          className="h-[200px] w-[200px] lg:h-[200px] lg:w-[400px] 
-          bg-pink-600/50 absolute -z-10 
-          blur-[10rem] rounded-full bottom-0 left-0 lg:left-[700px] "
+          className="h-[15rem] w-[20rem] absolute -z-10 bg-[#00FFFF]/40
+          blur-[10rem] rounded-full bottom-0 right-0 xl:right-[400px]"
         ></div>
         <ThemeContextProvider>
           <ActiveSectionContextProvider>
