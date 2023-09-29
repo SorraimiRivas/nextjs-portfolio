@@ -65,10 +65,11 @@ const ContactMe = () => {
           className="p-4 h-56 rounded-lg border border-gray-200 w-full mt-4 text-black"
           required
           name="message"
-          maxLength={6000}
+          maxLength={2000}
           value={message}
           onChange={(e) => setMessage(e.target.value)}
         />
+        <p>{`${message.length}/2000`}</p>
         <SubmitButton />
       </form>
     </motion.section>
