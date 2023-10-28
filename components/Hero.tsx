@@ -57,11 +57,12 @@ const Hero = () => {
         >
           Hello, I&apos;m <span className="font-bold">Sorraimi</span>. I&apos;m
           a <span className="font-bold ">Front-End developer</span> with{" "}
-          <span className="font-bold ">2 years</span> of experience. I enjoy
-          building apps that are <span className="font-semibold">easy</span> to
-          use and <span className="font-bold ">intuitive</span> to navigate.
-          Let&apos;s <span className="font-semibold">collaborate</span> and turn
-          your vision into reality.
+          <span className="font-bold ">2 years</span> of professional
+          experience. I enjoy building apps that are{" "}
+          <span className="font-semibold">easy</span> to use and{" "}
+          <span className="font-bold ">intuitive</span> to navigate. Let&apos;s{" "}
+          <span className="font-semibold">collaborate</span> and turn your
+          vision into reality.
         </motion.p>
       </div>
       <motion.div
