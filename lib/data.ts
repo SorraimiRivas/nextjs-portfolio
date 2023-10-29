@@ -2,6 +2,7 @@ import { createElement } from "react";
 import { IoSchoolSharp } from "react-icons/io5";
 import { AiFillChrome, AiFillMobile } from "react-icons/ai";
 import { FaReact } from "react-icons/fa";
+import { BsPersonLinesFill } from "react-icons/bs";
 
 export const navigation = [
   { name: "Home", path: "/#home" },
@@ -107,6 +108,15 @@ export const experience = [
     period: "March, 2022 - March, 2023",
     location: "San Salvador, El Salvador / Remote",
     icon: createElement(FaReact),
+  },
+  {
+    name: "Contractor",
+    position: "Mobile Developer Consultant",
+    description:
+      "Worked as a mobile developer consultant asisting the development team of a small business with their navigation and data flow, resulting in a 77% improvement in load times between screens, going from 6-9 seconds to 1-2 seconds.",
+    period: "July, 2023 - August, 2023",
+    location: "Santo Domingo, Rep. Dom",
+    icon: createElement(BsPersonLinesFill),
   },
   {
     name: "Agricultic",
