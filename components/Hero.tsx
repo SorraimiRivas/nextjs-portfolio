@@ -19,7 +19,7 @@ const Hero = () => {
   return (
     <section
       id="home"
-      className="scroll-mt-28 max-w-[60rem] text-center"
+      className="scroll-mt-20 max-w-[60rem] text-center"
       ref={ref}
     >
       <div className="flex flex-col items-center justify-center">
@@ -32,7 +32,7 @@ const Hero = () => {
             duration: 1.5,
           }}
         >
-          <div className="h-24 w-24 rounded-full my-14 sm:my-36">
+          <div className="h-24 w-24 rounded-full  sm:my-20">
             <Image
               src={"/svgs/react-2.svg"}
               alt="react logo"
