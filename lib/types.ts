@@ -7,7 +7,7 @@ export type ProjectCardProps = {
   description: string;
   images?: string;
   github?: string;
-  url?: string;
+  href?: string;
   tags?: string[];
 };
 

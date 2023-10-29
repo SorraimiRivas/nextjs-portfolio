@@ -42,24 +42,26 @@ export const projects = [
   {
     name: "TMDB Mobile",
     description:
-      "A mobile app for browsing popular movies that users can add to their favorites and store locally on their devices.",
-    images: "",
+      "A mobile version of the reputed website The Movies Database that aims to provide a better user experience while browsing movies and series on their mobile device.",
+    images: "/images/tmdb.png",
     tags: ["React Native", "TypeScript", "Redux", "Axios HTTP", "Rest API"],
+    href: "https://github.com/SorraimiRivas/tmdb-mobile-unofficial",
   },
   {
     name: "Marvel Comics",
     description:
-      "A mobile app for browsing Marvel Comics and local storage favourite functionality.",
-    images: "",
+      "A mobile app for browsing Marvel Comics and their many characters that we love.",
+    images: "/images/marvel.png",
     tags: ["React Native", "TypeScript", "Redux", "Axios HTTP", "Rest API"],
+    href: "https://github.com/SorraimiRivas/marvel-comics",
   },
-  {
-    name: "To-modoro",
-    description:
-      "A mobile app for managing tasks using the Pomodoro technique and Todo list to stay up to date with your taks.",
-    images: "",
-    tags: ["Expo", "TypeScript", "Tailwind CSS"],
-  },
+  // {
+  //   name: "To-modoro",
+  //   description:
+  //     "A mobile app for managing tasks using the Pomodoro technique and Todo list to stay up to date with your taks.",
+  //   images: "",
+  //   tags: ["Expo", "TypeScript", "Tailwind CSS"],
+  // },
   {
     name: "Agricultic",
     description:
@@ -74,6 +76,7 @@ export const projects = [
       "GraphQL",
       "Apollo",
     ],
+    href: "https://agricultic.com.do/",
   },
 ];
 
