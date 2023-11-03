@@ -45,7 +45,15 @@ export const projects = [
     description:
       "A mobile version of the reputed website The Movies Database that aims to provide a better user experience while browsing movies and series on their mobile device.",
     images: "/images/tmdb.png",
-    tags: ["React Native", "TypeScript", "Redux", "Axios HTTP", "Rest API"],
+    tags: [
+      "React Native",
+      "Expo",
+      "Expo Router V2",
+      "TypeScript",
+      "Redux",
+      "Axios HTTP",
+      "Rest API",
+    ],
     href: "https://github.com/SorraimiRivas/tmdb-mobile-unofficial",
   },
   {
@@ -56,13 +64,6 @@ export const projects = [
     tags: ["React Native", "TypeScript", "Redux", "Axios HTTP", "Rest API"],
     href: "https://github.com/SorraimiRivas/marvel-comics",
   },
-  // {
-  //   name: "To-modoro",
-  //   description:
-  //     "A mobile app for managing tasks using the Pomodoro technique and Todo list to stay up to date with your taks.",
-  //   images: "",
-  //   tags: ["Expo", "TypeScript", "Tailwind CSS"],
-  // },
   {
     name: "Agricultic",
     description:
@@ -110,10 +111,10 @@ export const experience = [
     icon: createElement(FaReact),
   },
   {
-    name: "Contractor",
-    position: "Mobile Developer Consultant",
+    name: "Undisclosed Outsourcing Provider",
+    position: "React Native Consultant",
     description:
-      "Worked as a mobile developer consultant asisting the development team of a small business with their navigation and data flow, resulting in a 77% improvement in load times between screens, going from 6-9 seconds to 1-2 seconds.",
+      "I played a pivotal role in enhancing the app's performance, resulting in an impressive 80% reduction in screen navigation load times, from 6-9 seconds down to 1-2 seconds. This significantly improved the user experience. My responsibilities included refactoring code to eliminate redundancy and bad practices, ensuring more predictable and maintainable code with consistent naming conventions. Additionally, I led the redesign of data flow for select screens, simplifying the codebase and enhancing scalability for future development.",
     period: "July, 2023 - August, 2023",
     location: "Santo Domingo, Rep. Dom",
     icon: createElement(BsPersonLinesFill),
@@ -122,7 +123,7 @@ export const experience = [
     name: "Agricultic",
     position: "Frontend Developer",
     description:
-      "Designing and implementing the visual elements of the web app, including layout, typography, color schemes, and overall user experience and transforming design mockups into actual interactive components using Javascript, React/ Nextjs, and Tailwind.",
+      "Designing and implementing the visual elements of the web app, including layout, typography, color schemes, and overall user experience and transforming design mockups into actual interactive components using Javascript, React/ Nextjs, Tailwind, and Headless UI.",
     period: "March, 2023 - Present",
     location: "La Vega, Rep. Dom. / Remote",
     icon: createElement(AiFillChrome),
